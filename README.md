@@ -9,11 +9,12 @@ Be careful! This would cost about 20MB of disk space.<br>
 ##Require
 
 1. Ruby-2.0<br>
-2. Active records<br>
-3. Nokogiri<br>
-4. Open-uri<br>
-5. NetWork<br>
-6. MySQL-server<br>
+2. Rubygems-current<br>
+3. Active records<br>
+4. Nokogiri<br>
+5. Open-uri<br>
+6. NetWork<br>
+7. MySQL-server<br>
 
 ##Data Schema
 
