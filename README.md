@@ -18,13 +18,14 @@ Be careful! This would cost about 20MB of disk space.<br>
 
 ##Data Schema
 
+<b>Note : Table VegetableLog is belonged to table Vegetable.</b>
 ###Vegetable
   <table>
      <tr> 
-        <td>serial</td><td>name</td><td>r_name</td>
+        <td>column name</td><td>serial</td><td>name</td><td>r_name</td>
      </tr>
     <tr>
-       <td>string</td><td>string</td><td>string</td>
+       <td>data type</td><td>string</td><td>string</td><td>string</td>
     </tr>
 
   </table>
@@ -32,10 +33,10 @@ Be careful! This would cost about 20MB of disk space.<br>
 ###VegetableLog
   <table>
     <tr>
-      <td>price1</td><td>price2</td><td>price3</td><td>log_date</td><td>create_at</td><td>update_at</td><td>vegetable_id</td>
+     <td>column name</td> <td>price1</td><td>price2</td><td>price3</td><td>log_date</td><td>create_at</td><td>update_at</td><td>vegetable_id</td>
     </tr>
     <tr>
-      <td>integer</td><td>integer</td><td>integer</td><td>date</td><td>datetime</td><td>datetime</td><td>integer</td>
+      <td>data type</td><td>integer</td><td>integer</td><td>integer</td><td>date</td><td>datetime</td><td>datetime</td><td>integer</td>
     </tr>
   </table>
 
