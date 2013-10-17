@@ -57,7 +57,8 @@ Be careful! This would cost about 20MB of disk space.<br>
 
 * Build the development database first<br>
 * create "Vegetable" and "VegetableLog" table<br>
-* change the password in the vege.rb with your own mysql server password<br>
+* change the password and username in the "database.yml" with your own mysql server user and password <br>
+* change the path for database.yml in "vege.rb" to ensure that can connect to your database<br>
 * execute the vege.rb and then would get the information<br>
 
 ##Todo
