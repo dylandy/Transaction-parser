@@ -6,24 +6,17 @@ require 'nokogiri'
 require 'date'
 require 'open-uri'
 require 'pp'
+require 'yaml'
 
 class Catalog < ActiveRecord::Base ; end 
 class Vegetable < ActiveRecord::Base ; end 
 class VegetableLog < ActiveRecord::Base ; end
 
 module Robot
- # change the password with your own password for root
-  DB_CONNECTION_SETTING = {
-    adapter: "mysql2",
-	  encoding: "utf8",
-	  database: "project_development",
-	  pool: 5,
-	  username: "root",
-	  password: '***',
-		socket: "/var/run/mysqld/mysqld.sock"
-	}
   def self.initialize
-    ActiveRecord::Base.establish_connection(DB_CONNECTION_SETTING)
+    environment = ENV['RACK_ENV'] || 'development'
+    dbconfig = YAML.load(File.read('database.yml')) #change the path of your own database.yml 
+    ActiveRecord::Base.establish_connection dbconfig[environment]
   def self.go! 
     initialize()
     vegetable()

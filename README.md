@@ -15,10 +15,22 @@ Be careful! This would cost about 20MB of disk space.<br>
 5. Open-uri<br>
 6. NetWork<br>
 7. MySQL-server<br>
+8. YAML<br>
+9. perfect print<br>
 
 ##Data Schema
 
 <b>Note : Table VegetableLog is belonged to table Vegetable.</b>
+###Catalog
+  <table>
+    <tr>
+      <td>column name</td><td>name</td><td>kind</td><td>created_at</td><td>updated_at</td>
+    </tr>
+    <tr>
+      <td>data type</td><td>string</td><td>integer</td><td>datetime</td><td>datetime</td>
+    </tr>
+  </table>
+  <strong>:kind =>  limit:1 , null:false</strong>
 ###Vegetable
   <table>
      <tr> 
@@ -29,7 +41,7 @@ Be careful! This would cost about 20MB of disk space.<br>
     </tr>
 
   </table>
-
+  <strong>:season,:kind => limit:1 , :form => limit:2</strong>
 ###VegetableLog
   <table>
     <tr>
@@ -39,6 +51,7 @@ Be careful! This would cost about 20MB of disk space.<br>
       <td>data type</td><td>integer</td><td>integer</td><td>integer</td><td>date</td><td>datetime</td><td>datetime</td><td>integer</td>
     </tr>
   </table>
+  <strong>:vegetable_id => null:false</strong>
 
 ##Install
 
