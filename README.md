@@ -65,6 +65,7 @@ Be careful! This would cost about 20MB of disk space.<br>
 
 * Multi-threading to make the parsing process faster.<br>
 * Some famous kinds of fruit and vegetable may not have any information.<br>
+* About half kind of the models in the database didn't update for so long.<br>
 
 
 ##Data resource
