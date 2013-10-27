@@ -8,7 +8,7 @@ Be careful! This would cost about 20MB of disk space.<br>
 
 ##Require
 
-1. Ruby-2.0<br>
+1. Ruby-2.0 || Maybe Ruby-1.9<br>
 2. Rubygems-current<br>
 3. Active records<br>
 4. Nokogiri<br>
@@ -64,6 +64,7 @@ Be careful! This would cost about 20MB of disk space.<br>
 ##Todo
 
 * Multi-threading to make the parsing process faster.<br>
+* Some famous kinds of fruit and vegetable may not have any information.<br>
 
 
 ##Data resource

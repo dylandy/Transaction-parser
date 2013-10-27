@@ -53,6 +53,7 @@ module Robot
 			return v.id
 	  end
 	end
+
   def self.vegetable_filter(date)
     year = (date.strftime('%Y').to_i - 1911).to_s.rjust(3 , '0')
     puts "http://www.tapmc.com.tw/tapmc_new16/price1.asp?YEARS=#{year}&MONTHS=#{date.strftime('%m')}&DAYS=#{date.strftime('%d')}&FV_CODE=A&MARKET=1&temp=Z"
