@@ -5,4 +5,4 @@ development:
   pool: 5
   username: 
   password:
-  socket: /var/run/mysqld/mysqld.sock
+  socket: 
